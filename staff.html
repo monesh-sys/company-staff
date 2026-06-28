@@ -1,39 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="icon" href="logo.png" type="image/png">
+    <link rel="icon" href="logo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MoneshSys Update</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
-     body{font-family:Arial;background:#f4f6f8;padding:30px;margin: 0;}
-    .post{
-      background:white;
-      padding:20px;
-      margin:15px auto;
-      max-width:800px;
-      border-radius:8px;
-    }
-    .head{
-      background-color: #0a66c2;
-      margin: 0;
-      padding: 30px 20px;
-      color: white;
-      text-align: center;
-    }
-    h2{color:#0a66c2;}
-    footer{
-      text-align: center;
-      margin-top: 100px;
-      padding: 20px;
-    }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#050816,#0a66c2,#111,#1b1b2f);
+    background-size:400% 400%;
+    animation:bg 10s ease infinite;
+    overflow:hidden;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.post{
+
+    width:90%;
+    max-width:750px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    color:white;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+
+    transition:.4s;
+}
+
+.post:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(10,102,194,.5);
+
+}
+
+.icon{
+
+    width:80px;
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#0a66c2;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:38px;
+
+    box-shadow:0 0 30px #0a66c2;
+
+    margin-bottom:25px;
+}
+
+h1{
+
+    text-align:center;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+p{
+
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+    color:#ddd;
+
+}
+
+.date{
+
+    margin:30px auto 0;
+
+    width:220px;
+
+    background:#0a66c2;
+
+    text-align:center;
+
+    padding:12px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    box-shadow:0 0 20px rgba(10,102,194,.5);
+
+}
+
+.line{
+
+    width:80px;
+    height:4px;
+
+    background:#0a66c2;
+
+    margin:20px auto;
+
+    border-radius:50px;
+}
+
+footer{
+
+    position:absolute;
+    bottom:20px;
+
+    color:white;
+
+    font-size:14px;
+
+    opacity:.7;
+
+}
+
     </style>
+
 </head>
-<body style="background: linear-gradient(black);">
-     <div class="post">
-  <h2>🆕 New Update</h2>
-  <p>MoneshSys Technologies will release the new update on jul 01 2026.</p>
-  <small>Posted on: jun 2026</small>
+
+<body>
+
+<div class="post">
+
+    <div class="icon">
+        🚀
+    </div>
+
+    <h1>New Update Released</h1>
+
+    <div class="line"></div>
+
+    <p>
+        MoneshSys Technologies is excited to announce that the next major update
+        will be officially released on
+        <strong style="color:#4fc3ff;">01 July 2026</strong>.
+        <br><br>
+        Stay tuned for exciting new features, performance improvements,
+        bug fixes, and a much better user experience.
+    </p>
+
+    <div class="date">
+        📅 Release Date : 01 July 2026
+    </div>
+
 </div>
+
+<footer>
+    © 2026 MoneshSys Technologies • All Rights Reserved
+</footer>
+
 </body>
 </html>
